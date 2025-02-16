@@ -57,7 +57,7 @@
     .EXAMPLE
     Sample call from PRTG EXE/Script Advanced
 
-    "PRTG-M365-AppSecrets.ps1" -ApplicationID 'Test-APPID' -TenantID 'contoso.onmicrosoft.com' -AccessSecret 'Test-AppSecret'
+    "Get-AppCredentialExpiry.ps1" -ApplicationID 'Test-APPID' -TenantID 'contoso.onmicrosoft.com' -AccessSecret 'Test-AppSecret'
 
     Microsoft 365 Permission:
         1. Open Azure AD
@@ -66,7 +66,7 @@
         4. Set API Permissions >> MS Graph >> Application >> Application.Read.All
         5. Certificates & secrets >> new Secret
 
-    Based on the Script by Jannos-443
+    Based on the Script by Jannos-443 (This script uses Micosoft Graph Modules)
     https://github.com/Jannos-443/PRTG-M365
 #>
 param(
